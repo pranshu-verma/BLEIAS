@@ -1,9 +1,9 @@
 package com.example.android.bluetoothlegatt;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -15,9 +15,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class HomeFragment extends Fragment {
+
     private static final float[] NEGATIVE = {
             -1.0f, 0, 0, 0, 255, // red
             0, -1.0f, 0, 0, 255, // green
@@ -32,9 +31,10 @@ public class HomeFragment extends Fragment {
         TextView about_card = view.findViewById(R.id.about_card);
         TextView help_card = view.findViewById(R.id.help_card);
         TextView contact_card = view.findViewById(R.id.contact_card);
-        setNegative(about_card);
-        setNegative(help_card);
-        setNegative(contact_card);
+        ImageView bluetooth_icon = view.findViewById(R.id.icon_bluetooth);
+        setNegativeTextView(about_card);
+        setNegativeTextView(help_card);
+        setNegativeTextView(contact_card);
         moveToDeviceScan(view);
         return view;
     }
@@ -50,11 +50,12 @@ public class HomeFragment extends Fragment {
         });
     }
 
-    public void setNegative(TextView textView) {
+    public void setNegativeTextView(TextView textView) {
         for (Drawable drawable: textView.getCompoundDrawables()) {
             if (drawable != null) {
                 drawable.setColorFilter(new ColorMatrixColorFilter(NEGATIVE));
             }
         }
     }
+
 }

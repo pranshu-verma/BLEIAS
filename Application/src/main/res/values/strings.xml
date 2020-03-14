@@ -51,5 +51,6 @@
     <string name="college_address">Lavale, Pune</string>
     <string name="learn_home">Learn</string>
     <string name="contact_home">Contact</string>
+    <string name="discover_bluetooth">Discover nearby information</string>
 
 </resources>

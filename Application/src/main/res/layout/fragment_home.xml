@@ -52,7 +52,8 @@
         android:textColor="@android:color/white"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/moveToDeviceScan"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -76,7 +77,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/about_card"
@@ -112,6 +113,32 @@
         app:layout_constraintEnd_toEndOf="@+id/sit_logo"
         app:layout_constraintTop_toBottomOf="@id/card_break" />
 
+    <ImageView
+        android:id="@+id/icon_bluetooth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_bluetooth_searching"
+        android:layout_margin="32dp"
+        android:contentDescription="@string/no_data"
+        app:layout_constraintBottom_toTopOf="@+id/discover_bluetooth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_card" />
+
+    <TextView
+        android:id="@+id/discover_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discover_bluetooth"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/moveToDeviceScan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_card"
+        app:layout_constraintVertical_bias="0.9"/>
+
     <Button
         android:id="@+id/moveToDeviceScan"
         android:layout_width="match_parent"
@@ -119,11 +146,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/connect"
-        android:background="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.95" />
 
 </android.support.constraint.ConstraintLayout>
