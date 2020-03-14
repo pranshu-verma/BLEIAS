@@ -35,6 +35,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -91,8 +92,8 @@ public class BluetoothLeService extends Service {
                     bluetoothGattService = bluetoothGattServiceList.get(i);
                 }
                 assert bluetoothGattService != null;
-                characteristicList.add(bluetoothGattService.getCharacteristics().get(0));
-                characteristicList.add(bluetoothGattService.getCharacteristics().get(1));
+                characteristicList.addAll(bluetoothGattService.getCharacteristics());
+                Collections.reverse(characteristicList);
                 readCharacteristics(gatt);
                 broadcastUpdate(ACTION_GATT_SERVICES_DISCOVERED);
                 showToast("Services Discovered.");
@@ -109,7 +110,7 @@ public class BluetoothLeService extends Service {
         public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
             if (status == BluetoothGatt.GATT_SUCCESS) {
                 broadcastUpdate(characteristic);
-                Log.d(TAG, "onCharacteristicRead: characteristics = " + characteristic.getUuid());
+                Log.d(TAG, "onCharacteristicRead: characteristic.getUuid() = " + characteristic.getUuid());
                 showToast("Reading characteristics. Remaining: " + (characteristicList.size() - 1));
                 characteristicList.remove(characteristicList.get(characteristicList.size() - 1));
                 if (characteristicList.size() > 0) {
