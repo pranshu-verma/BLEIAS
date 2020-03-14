@@ -45,4 +45,11 @@
 
     <string name="available_devices">Available Devices</string>
 
+    <!--  Home page  -->
+    <string name="college_name">Symbiosis Institute of Technology</string>
+    <string name="tag_line">Discover &amp; Explore</string>
+    <string name="college_address">Lavale, Pune</string>
+    <string name="learn_home">Learn</string>
+    <string name="contact_home">Contact</string>
+
 </resources>

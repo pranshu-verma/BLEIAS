@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@color/colorPrimaryDark">
 
     <TextView
         android:id="@+id/title"
@@ -13,12 +13,104 @@
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:paddingBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05"/>
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tag_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/tag_line"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageView
+        android:id="@+id/sit_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/no_data"
+        android:src="@drawable/sit_logo_cropped"
+        app:layout_constraintBottom_toTopOf="@id/college_title"
+        app:layout_constraintLeft_toLeftOf="@id/college_title"
+        app:layout_constraintRight_toRightOf="@id/college_title"
+        app:layout_constraintTop_toBottomOf="@id/tag_line" />
+
+    <TextView
+        android:id="@+id/college_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/college_name"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/moveToDeviceScan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/college_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/college_address"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/college_title"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/college_title"
+        app:layout_constraintTop_toBottomOf="@+id/college_title" />
+
+    <View
+        android:id="@+id/card_break"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/about_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_info"
+        android:drawablePadding="8dp"
+        android:text="@string/about"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/sit_logo"
+        app:layout_constraintTop_toBottomOf="@id/card_break" />
+
+    <TextView
+        android:id="@+id/help_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_help"
+        android:drawablePadding="8dp"
+        android:text="@string/learn_home"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sit_logo"
+        app:layout_constraintStart_toStartOf="@+id/sit_logo"
+        app:layout_constraintTop_toBottomOf="@id/card_break" />
+
+    <TextView
+        android:id="@+id/contact_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:text="@string/contact_home"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sit_logo"
+        app:layout_constraintTop_toBottomOf="@id/card_break" />
 
     <Button
         android:id="@+id/moveToDeviceScan"
@@ -27,10 +119,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/connect"
-        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
 
 </android.support.constraint.ConstraintLayout>
