@@ -8,10 +8,6 @@
             android:id="@+id/home"
             android:icon="@drawable/ic_home"
             android:title="@string/home" />
-        <item
-            android:id="@+id/connect"
-            android:icon="@drawable/ic_bluetooth"
-            android:title="@string/connect" />
     </group>
 
     <group
