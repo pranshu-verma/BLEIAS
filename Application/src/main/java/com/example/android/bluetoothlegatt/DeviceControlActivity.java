@@ -26,10 +26,15 @@ import android.content.ServiceConnection;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.support.annotation.IdRes;
 import android.support.annotation.RequiresApi;
+import android.support.design.widget.TabLayout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 /**
@@ -166,9 +171,31 @@ public class DeviceControlActivity extends Activity {
 
     private void displayData(String data) {
         if (data != null) {
-            mDataField.append(data);
-            mDataField.append("\n");
-            mDataField.append("\n");
+            if (!data.startsWith("1")) {
+                String[] splitDataComma = data.split(", ");
+                for (String splitData: splitDataComma) {
+                    mDataField.append(splitData);
+                    mDataField.append("\n");
+                }
+                mDataField.append("\n");
+            } else {
+                insertTableData(data);
+            }
+        }
+    }
+
+    private void insertTableData(String data) {
+        TableLayout timeTable = findViewById(R.id.time_table);
+        timeTable.setVisibility(View.VISIBLE);
+        TableRow mondayRow = findViewById(R.id.row_monday);
+        String[] workSchedule = data.split(" ");
+        for (int i = 1; i <= 8; i++) {
+            TextView textView = (TextView) mondayRow.getChildAt(i);
+            textView.setTextColor(getResources().getColor(R.color.colorWhite));
+            if (workSchedule[i-1].equals("1"))
+                textView.setText(R.string.busy);
+            else
+                textView.setText(R.string.free);
         }
     }
 

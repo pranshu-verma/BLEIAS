@@ -40,6 +40,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Activity for scanning and displaying available Bluetooth LE devices.
@@ -197,8 +198,9 @@ public class DeviceScanActivity extends ListActivity {
 
         private void addDevice(BluetoothDevice device) {
             if (!mLeDevices.contains(device)) {
-                if (device.getName() != null && device.getName().startsWith("BLE"))
+                if (device.getName() != null && device.getName().startsWith("BLE")) {
                     mLeDevices.add(device);
+                }
             }
         }
 
@@ -242,7 +244,7 @@ public class DeviceScanActivity extends ListActivity {
             BluetoothDevice device = mLeDevices.get(i);
             final String deviceName = device.getName();
             if (deviceName != null && deviceName.length() > 0)
-                viewHolder.deviceName.setText(deviceName);
+                viewHolder.deviceName.setText(deviceName.substring(4));
             else
                 viewHolder.deviceName.setText(R.string.unknown_device);
             viewHolder.deviceAddress.setText(device.getAddress());
