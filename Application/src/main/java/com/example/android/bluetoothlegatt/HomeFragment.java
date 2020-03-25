@@ -31,7 +31,6 @@ public class HomeFragment extends Fragment {
         TextView about_card = view.findViewById(R.id.about_card);
         TextView help_card = view.findViewById(R.id.help_card);
         TextView contact_card = view.findViewById(R.id.contact_card);
-        ImageView bluetooth_icon = view.findViewById(R.id.icon_bluetooth);
         setNegativeTextView(about_card);
         setNegativeTextView(help_card);
         setNegativeTextView(contact_card);

@@ -23,7 +23,7 @@
 
     <TextView
         android:id="@+id/question_1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/question_1"
         android:textColor="@color/colorWhite"
@@ -34,14 +34,138 @@
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <RatingBar
-        android:id="@+id/rating"
+        android:id="@+id/rating_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:theme="@style/RatingBar"
+        app:layout_constraintHorizontal_bias="0.05"
         android:numStars="5"
         android:saveEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question_1" />
 
+    <TextView
+        android:id="@+id/question_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/question_2"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating_bar" />
+
+    <RadioGroup
+        android:id="@+id/group_q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_2">
+
+        <RadioButton
+            android:id="@+id/q2_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@color/colorWhite"
+            android:text="@string/yes"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/q2_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@color/colorWhite"
+            android:text="@string/no"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/question_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/question_3"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_q2" />
+
+    <RadioGroup
+        android:id="@+id/group_q3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_3">
+
+        <RadioButton
+            android:id="@+id/q3_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@color/colorWhite"
+            android:text="@string/yes"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/q3_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@color/colorWhite"
+            android:text="@string/no"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/question_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/question_4"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_q3" />
+
+    <EditText
+        android:id="@+id/answer_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorAccent"
+        android:hint="@string/suggestions"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_4"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

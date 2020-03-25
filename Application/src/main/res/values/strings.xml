@@ -42,7 +42,10 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="explore">Explore</string>
-
+    <string name="submit">Submit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="suggestions">Suggestions …</string>
     <string name="available_devices">Available Devices</string>
 
     <!--  Home page  -->
@@ -86,4 +89,8 @@
 
     <!--  Feedback page  -->
     <string name="question_1">Q1. Are you satisfied with our services?</string>
+    <string name="question_2">Q2. Did you face any issues while using the application?</string>
+    <string name="question_3">Q3. Were the data of rooms provided sufficient enough?</string>
+    <string name="question_4">Q4. Would you like to suggest any improvement in our application?</string>
+
 </resources>
