@@ -36,7 +36,7 @@
     <!-- Navbar items -->
     <string name="home">Home</string>
     <string name="connect">Connect</string>
-    <string name="contact">Contact Us</string>
+    <string name="contact">Feedback</string>
     <string name="about">About</string>
     <string name="learn">How to use</string>
     <string name="open">Open</string>
@@ -73,4 +73,17 @@
     <string name="lecture_6">2:00&#8211;2:55</string>
     <string name="lecture_7">2:55&#8211;3:50</string>
     <string name="lecture_8">3:50&#8211;4:45</string>
+
+    <!--  About page  -->
+    <string name="about_text_1">Information Access System (IAS) is a Bluetooth Energy based system which focuses on providing ease of access of information to the user.</string>
+    <string name="about_text_2">This technology is devised and programmed by the students of Symbiosis Institute of Technology, Electronics and Telecommunication department which primarily focuses on providing useful, time - effective data of any space or room within the institute.</string>
+
+    <!--  How to use page -->
+    <string name="step_1">Step 1 : Tap on the connect button and allow your device to connect to the Bluetooth.</string>
+    <string name="step_2">Step 2 : Once your device has been connected, tap on the desired device/room number you want your screen to display the information of. </string>
+    <string name="step_3">Step 3 : If your phone is unable to scan the device, make sure you are within the range of the space or room you want to access the information of.</string>
+    <string name="step_4">Once connected, you will be able to access complete information of the space.</string>
+
+    <!--  Feedback page  -->
+    <string name="question_1">Q1. Are you satisfied with our services?</string>
 </resources>
