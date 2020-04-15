@@ -52,10 +52,14 @@ void setup() {
                                         BLECharacteristic::PROPERTY_WRITE
                                        );
 
+/* Lab information */
 aCharacteristic->setValue("Computer Communication Lab&& &&Faculty In-charges: Prof. Shripad Deshpande and Prof. Harikrishnan R&&Lab Assistant: Mr.Pratap More&& &&Equipments: 20 PCs all connected together in a single computer network, Network Interface Card, Hub, Switches, Router, Modem, Cable and connectors. Supplementary like crimping tool, LAN Ethernet cables are also provided for thorough understanding. We also have manuals for stepwise implementation of the experiments");                                       
 bCharacteristic->setValue("It is a lab in which various experiments specific to networking domain are performed so as to have a practical understanding of industry level networking. Learning Outcomes of this lab could be Data Communication Systems and its components, Identifying different types of network topologies and protocols, Understanding of the OSI model and TCP/IP. Also different types of network devices and their functions within a network and comprehension of application layer that how it communicates across the information network.");
 pCharacteristic->setValue("Course Outcomes: Students will get practical knowledge about various networking components. Good hands on knowledge could be acquired in troubleshooting networking problems using various techniques. Students would also become able to construct straight and cross cabling and most importantly will be competent to program for network management. Pre learning required is just the basic understanding and use of computers in data communication.");
+
+/* Time table */
 rCharacteristic->setValue("1 1 0 0 1 1 0 0, 1 1 1 1 0 0 0 0, 0 0 1 1 0 0 1 1, 0 0 1 1 0 0 0 0, 0 0 0 0 1 1 0 0");
+
   pService->start();
   BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
   BLEAdvertising *aAdvertising = BLEDevice::getAdvertising();   
