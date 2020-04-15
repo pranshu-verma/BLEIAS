@@ -45,9 +45,13 @@ BLECharacteristic *aCharacteristic = pService->createCharacteristic(
                                          BLECharacteristic::PROPERTY_WRITE
                                        );
 
+/* Faculty information */
 aCharacteristic->setValue("Dr. Bhaskar Thakker is a Professor of Electronics and Telecommunication Department with highest qualification as Ph.D. in Embedded Systems from Indian Institute of Technology (IIT) Delhi. He has published around 25-30 articles in renowned journals and has a teaching experience of around 21 years.");                                       
 bCharacteristic->setValue("He takes Advanced Embedded System Design and IoT and Applications courses for M.Tech students which include both theory sessions and practical sessions. Apart from this he also takes embedded systems course for B.Tech students as well as mentors a few groups of Final Year for their B.Tech project.");
+
+/* Time table */
 pCharacteristic->setValue("1 0 1 1 0 0 1 0, 0 0 1 1 0 1 0 0, 1 0 1 0 1 0 1 0, 0 1 1 0 1 0 1 0, 1 0 1 0 0 0 0 0");
+
   pService->start();
   BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
   BLEAdvertising *aAdvertising = BLEDevice::getAdvertising();   
