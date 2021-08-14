@@ -2,7 +2,6 @@
 *Final year project on Bluetooth Low Energy*
 
 ## Table of contents
-- [Bluetooth Low Energy - Information Access System](#bluetooth-low-energy---information-access-system)
   * [Abstract](#abstract)
   * [Why BLE?](#why-ble)
     + [Features](#features)
