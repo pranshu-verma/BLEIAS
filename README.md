@@ -23,6 +23,26 @@ This project puts forward a **proof-of-concept**, **low-cost**, and **easily dep
 ## Workflow
 ![Workflow](https://github.com/pranshu-verma/BLEIAS/blob/master/Screenshots/workflow.jpg)
 
+## Demo
+
+<table>
+    <tr>
+        <th>Step</th>
+        <th width="70%">Preview</th>
+    </tr>
+    <tr>
+        <td>1. Press connect to view the list of BLEs around you</td>
+        <td><img src="https://github.com/pranshu-verma/BLEIAS/blob/master/Screenshots/home.jpeg" style="max-height: 500px"></td>
+    </tr>
+    <tr>
+        <td>2. Give Bluetooth permission to the application</td>
+        <td><img src="https://github.com/pranshu-verma/BLEIAS/blob/master/Screenshots/bt-request.jpeg" style="max-height: 500px"></td>
+    </tr>
+    <tr>
+        <td>3. List of available devices</td>
+        <td><img src="https://github.com/pranshu-verma/BLEIAS/blob/master/Screenshots/list-ble.png" style="max-height: 500px"></td>
+    </tr>
+</table>
 
 ## Contributers
 1. Amisha Kuwarbi - amisha.kuwarbi@sitpune.edu.in
