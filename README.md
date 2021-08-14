@@ -1,11 +1,30 @@
 # Bluetooth Low Energy - Information Access System
 *Final year project on Bluetooth Low Energy*
 
+## Table of contents
+- [Bluetooth Low Energy - Information Access System](#bluetooth-low-energy---information-access-system)
+  * [Abstract](#abstract)
+  * [Why BLE?](#why-ble)
+    + [Features](#features)
+    + [Tech details](#tech-details)
+  * [Diagram](#diagram)
+  * [Workflow](#workflow)
+  * [Results and Observations](#results-and-observations)
+    + [Observations on Data Transfer](#observations-on-data-transfer)
+    + [Observations on Image Transfer](#observations-on-image-transfer)
+  * [Demo](#demo)
+  * [Experience](#experience)
+  * [Links](#links)
+  * [Contributers](#contributers)
+
 
 ## Abstract
 This project puts forward a **proof-of-concept**, **low-cost**, and **easily deployable** Bluetooth Low Energy (BLE) based localization system using the ESP32 module which actively scans and connects to the nearby mobile devices. The mobile subjects will then be able to access the needed information of a space or a room by logging in to a dedicated self-designed app, namely, the `Information Access system (IAS)` in their smart phones.
 
 ## Why BLE?
+Bluetooth Low Energy is an intelligent, power-friendly version of Bluetooth wireless
+technology. This really is making smart devices more portable, affordable, and less complicated
+to convert into smarter devices.
 
 ### Features
 1. **The lowest power consumption**: To reduce power consumption, a BLE device is kept in sleep mode most of the time. A short message is transferred to a gateway or smartphone, whenever an event occurs. The device wakes up as during the occurrence of the event. *Maximum/peak power consumption is less than `15 mA` and the average power consumption is about `1 μA`.*
@@ -64,8 +83,12 @@ This project puts forward a **proof-of-concept**, **low-cost**, and **easily dep
 ## Experience
 ![Experience](https://github.com/pranshu-verma/BLEIAS/blob/master/Screenshots/irl-example.png)
 
+## Links
+* [Project report](https://drive.google.com/file/d/1g5iRCCeRysPG2UQmxSBpCURfNOPGbmp8/view?usp=sharing) 
+* [Research paper](https://drive.google.com/file/d/1Nt02oB1f3RyGd3N0XGsK91FEk0I8R74O/view?usp=sharing)
+
 ## Contributers
-1. Amisha Kuwarbi - amisha.kuwarbi@sitpune.edu.in
-2. Akshay Bhagwani - akshay.bhagwani@sitpune.edu.in
-3. Vennela Bandla - bandla.vennela@sitpune.edu.in
-4. Pranshu Verma - pranshu.verma@sitpune.edu.in
+1. Amisha Kuwarbi - amisha.kuwarbi@sitpune.edu.in / amishakuwarbi17@gmail.com
+2. Akshay Bhagwani - akshay.bhagwani@sitpune.edu.in / akshaybhagwani@gmail.com
+3. Vennela Bandla - bandla.vennela@sitpune.edu.in / vennelabandla1@gmail.com
+4. Pranshu Verma - pranshu.verma@sitpune.edu.in / pranshuvrm@gmail.com
