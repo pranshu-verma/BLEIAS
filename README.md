@@ -2,19 +2,19 @@
 *Final year project on Bluetooth Low Energy*
 
 ## Table of contents
-  * [Abstract](#abstract)
-  * [Why BLE?](#why-ble)
-    + [Features](#features)
-    + [Tech details](#tech-details)
-  * [Diagram](#diagram)
-  * [Workflow](#workflow)
-  * [Results and Observations](#results-and-observations)
-    + [Observations on Data Transfer](#observations-on-data-transfer)
-    + [Observations on Image Transfer](#observations-on-image-transfer)
-  * [Demo](#demo)
-  * [Experience](#experience)
-  * [Links](#links)
-  * [Contributers](#contributers)
+* [Abstract](#abstract)
+* [Why BLE?](#why-ble)
+  + [Features](#features)
+  + [Tech details](#tech-details)
+* [Diagram](#diagram)
+* [Workflow](#workflow)
+* [Results and Observations](#results-and-observations)
+  + [Observations on Data Transfer](#observations-on-data-transfer)
+  + [Observations on Image Transfer](#observations-on-image-transfer)
+* [Demo](#demo)
+* [Experience](#experience)
+* [Links](#links)
+* [Contributers](#contributers)
 
 
 ## Abstract
