@@ -21,7 +21,7 @@ This project puts forward a **proof-of-concept**, **low-cost**, and **easily dep
 3. **Topology** – BLE uses every slave's 32-bit access address, allowing thousands of devices to be connected. The technology is designed for single connections, though one-to-many connections using a star topology are possible.
 
 ## Workflow
-![Workflow](https://drive.google.com/file/d/1PkOmzl1MpfEzEJefjFpMR6qUxHsVBRHP/view?usp=sharing)
+![Workflow](https://github.com/pranshu-verma/BLEIAS/blob/master/Screenshots/workflow.jpg)
 
 
 ## Contributers
