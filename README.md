@@ -61,6 +61,9 @@ This project puts forward a **proof-of-concept**, **low-cost**, and **easily dep
 | 4. Lab Info | <img src="https://github.com/pranshu-verma/BLEIAS/blob/master/Screenshots/lab-info.png" width="250px">  |
 | 5. Faculty Info (with Image) | <img src="https://github.com/pranshu-verma/BLEIAS/blob/master/Screenshots/faculty-info.png" width="250px">  |
 
+## Experience
+![Experience](https://github.com/pranshu-verma/BLEIAS/blob/master/Screenshots/irl-example.png)
+
 ## Contributers
 1. Amisha Kuwarbi - amisha.kuwarbi@sitpune.edu.in
 2. Akshay Bhagwani - akshay.bhagwani@sitpune.edu.in
