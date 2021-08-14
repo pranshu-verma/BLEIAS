@@ -9,8 +9,8 @@
 * [Diagram](#diagram)
 * [Workflow](#workflow)
 * [Results and Observations](#results-and-observations)
-  + [Observations on Data Transfer](#observations-on-data-transfer)
-  + [Observations on Image Transfer](#observations-on-image-transfer)
+  + [Data Transfer](#data-transfer)
+  + [Image Transfer](#image-transfer)
 * [Demo](#demo)
 * [Experience](#experience)
 * [Links](#links)
@@ -45,12 +45,8 @@ to convert into smarter devices.
 ![Workflow](https://github.com/pranshu-verma/BLEIAS/blob/master/Screenshots/workflow.jpg)
 
 ## Results and Observations
-* A service provided by BLE has `7 characteristics`.
-* The total number of characters that a characteristic can hold is `578`.
-* Thus, the total number of characters in one service is `4046`.
-* The time observed for the data to transmit from the ESP module to the app per characteristic is `2.5 seconds`.
 
-### Observations on Data Transfer
+### Data Transfer
 
 | Observation | Result |
 | :---: | :---: |
@@ -59,15 +55,13 @@ to convert into smarter devices.
 | Total number of characters in one service *(A x B)* | `4046 characters` |
 | Time observed for the data to transmit | `2.5 seconds` |
 
-### Observations on Image Transfer
+### Image Transfer
 
 | Observation | Result |
 | :---: | :---: |
 | Size of the image | `3 KB` |
 | Pixel of the image | `75 x 75` |
 | Total time taken by the app to display the image | `7 x 2.5 seconds` | 
-
-
 
 ## Demo
 
