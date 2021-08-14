@@ -81,7 +81,7 @@ to convert into smarter devices.
 * [Research paper](https://drive.google.com/file/d/1Nt02oB1f3RyGd3N0XGsK91FEk0I8R74O/view?usp=sharing)
 
 ## Contributers
-1. Amisha Kuwarbi - amisha.kuwarbi@sitpune.edu.in / amishakuwarbi17@gmail.com
-2. Akshay Bhagwani - akshay.bhagwani@sitpune.edu.in / akshaybhagwani@gmail.com
-3. Vennela Bandla - bandla.vennela@sitpune.edu.in / vennelabandla1@gmail.com
-4. Pranshu Verma - pranshu.verma@sitpune.edu.in / pranshuvrm@gmail.com
+1. Amisha Kuwarbi - ~~amisha.kuwarbi@sitpune.edu.in~~ / amishakuwarbi17@gmail.com
+2. Akshay Bhagwani - ~~akshay.bhagwani@sitpune.edu.in~~ / akshaybhagwani@gmail.com
+3. Vennela Bandla - ~~bandla.vennela@sitpune.edu.in~~ / vennelabandla1@gmail.com
+4. Pranshu Verma - ~~pranshu.verma@sitpune.edu.in~~ / pranshuvrm@gmail.com
