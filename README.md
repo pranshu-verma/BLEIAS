@@ -78,7 +78,7 @@ to convert into smarter devices.
 
 ## Links
 * [Project report](https://drive.google.com/file/d/1g5iRCCeRysPG2UQmxSBpCURfNOPGbmp8/view?usp=sharing) 
-* [Research paper](https://drive.google.com/file/d/1Nt02oB1f3RyGd3N0XGsK91FEk0I8R74O/view?usp=sharing)
+* [Research paper](https://drive.google.com/file/d/1GRs022Cmzl0zai-u680fNGTSM-zcIuvT/view?usp=sharing)
 
 ## Contributers
 1. Amisha Kuwarbi - ~~amisha.kuwarbi@sitpune.edu.in~~ / amishakuwarbi17@gmail.com
